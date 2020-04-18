@@ -30,11 +30,8 @@ public class MathEquation {
         this.result = result;
     }
 
-
     public void execute() {
-
         switch (opCode) {
-
             case '+':
                 result = leftVal + rightVal;
                 break;

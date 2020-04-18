@@ -1,5 +1,3 @@
-import javax.print.attribute.standard.PresentationDirection;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class Main {
         equations[0] = create(100.0d, 50.0d, '+');
         equations[1] = create(25.0d, 92.0d, '-');
         equations[2] = create(225.0d, 34.0d, '*');
-        equations[3] = create(11.0d, 57.0d, '/');
+        equations[3] = create(100.0d, 5.0d, '/');
 
         for (MathEquation equation : equations) {
             equation.execute();
@@ -21,7 +19,6 @@ public class Main {
             System.out.println(equation.getResult());
         }
     }
-
     public static MathEquation create(double leftVal, double rightVal, char opCode) {
 
         MathEquation equation = new MathEquation();
