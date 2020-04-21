@@ -23,11 +23,21 @@ public class MathEquation {
     public void setOpCode(char opCode) {
         this.opCode = opCode;
     }
+
     public double getResult(){
         return result;
     }
-    private void setResult(){
-        this.result = result;
+
+    public MathEquation(){}
+
+    public MathEquation(char opCode){
+        this.opCode = opCode;
+    }
+
+    public MathEquation(char opCode, double leftVal, double rightVal){
+        this(opCode);
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
     }
 
     public void execute() {
